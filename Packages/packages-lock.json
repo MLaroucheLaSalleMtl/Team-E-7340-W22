@@ -9,7 +9,7 @@
     },
     "com.unity.2d.animation": {
       "version": "7.0.3",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.2d.common": "6.0.2",
@@ -40,14 +40,14 @@
     },
     "com.unity.2d.pixel-perfect": {
       "version": "5.0.1",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
     "com.unity.2d.psdimporter": {
       "version": "6.0.2",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.2d.animation": "7.0.3",
@@ -64,7 +64,7 @@
     },
     "com.unity.2d.spriteshape": {
       "version": "7.0.3",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.1.0",
@@ -195,6 +195,15 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.inputsystem": {
+      "version": "1.2.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.uielements": "1.0.0"
+      },
       "url": "https://packages.unity.com"
     },
     "com.unity.mathematics": {
