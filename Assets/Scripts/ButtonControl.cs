@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class ButtonControl : MonoBehaviour
 {
     private SpriteRenderer SR;
     public Sprite defaultImg;
