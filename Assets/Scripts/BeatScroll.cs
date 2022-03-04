@@ -18,13 +18,16 @@ public class BeatScroll : MonoBehaviour
     void Update()
     {
        if(!started)
-        {
-            started = true;
+       {
+            if (Input.anyKeyDown)
+            {
+                started = true;
+            }
 
-        }
+       }
        else
         {
-            transform.position -= new Vector3(0f, Tempo * Time.deltaTime, 0f);
+            transform.position -= new Vector3( Tempo * Time.deltaTime, 0f);
         }
     }
 }

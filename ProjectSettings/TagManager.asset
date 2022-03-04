@@ -12,7 +12,7 @@ TagManager:
   - Background
   - Water
   - UI
-  - Activator
+  - Arrows
   - 
   - 
   - 
@@ -41,4 +41,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 423951325
+    locked: 0
+  - name: Platform
+    uniqueID: 417082327
+    locked: 0
+  - name: Buttons & Notes
+    uniqueID: 1341933255
+    locked: 0
+  - name: Objects
+    uniqueID: 950874783
+    locked: 0
+  - name: Dialog Text
+    uniqueID: 4099239955
+    locked: 0
+  - name: NPC & Enemies
+    uniqueID: 845897213
+    locked: 0
+  - name: Main Character
+    uniqueID: 1394974295
     locked: 0
