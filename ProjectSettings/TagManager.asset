@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Activate
+  - ArrowsKeys
   layers:
   - Default
   - TransparentFX
@@ -48,11 +49,17 @@ TagManager:
   - name: Platform
     uniqueID: 417082327
     locked: 0
-  - name: Buttons & Notes
-    uniqueID: 1341933255
-    locked: 0
   - name: Objects
     uniqueID: 950874783
+    locked: 0
+  - name: 'Buttons '
+    uniqueID: 1341933255
+    locked: 0
+  - name: Arrows
+    uniqueID: 965511167
+    locked: 0
+  - name: Notes
+    uniqueID: 3087719885
     locked: 0
   - name: Dialog Text
     uniqueID: 4099239955

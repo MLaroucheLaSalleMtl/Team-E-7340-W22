@@ -6,6 +6,8 @@ public class NoteObject : MonoBehaviour
 {
     public bool canBePressed;
     public KeyCode keyToPress;
+  //  public GameObject Destroyobj;
+   
     
     // Start is called before the first frame update
     void Start()
@@ -31,7 +33,7 @@ public class NoteObject : MonoBehaviour
         if (collider.tag == "Activate")
         {
             canBePressed = true;
-            Score.scoreValue += 100;
+            GameManager.scoreValue += 100;
         }
     }
     
@@ -42,8 +44,25 @@ public class NoteObject : MonoBehaviour
         if(collider.tag == "Activate")
         {
             canBePressed = false;
-            Score.scoreValue -= 100;
+            if (!canBePressed)
+            {
+                Destroy(gameObject);
+            }
+            GameManager.scoreValue -= 100;
+            GameManager.instance.health -= 1;
             GameManager.instance.missedNote();
         }
+      
+        
     }
+   // private void OnCollisionEnter2D(Collision2D collision)
+   // {
+      //  if(collision.gameObject.name == "DestroyingButtons")
+      //  {
+        //    Destroy(gameObject);
+       // }
+   // }
+
+
+
 }
