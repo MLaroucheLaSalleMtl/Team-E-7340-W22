@@ -6,6 +6,7 @@ public class NoteObject : MonoBehaviour
 {
     public bool canBePressed;
     public KeyCode keyToPress;
+    private GameManager game;
   //  public GameObject Destroyobj;
    
     
@@ -20,9 +21,11 @@ public class NoteObject : MonoBehaviour
     {
         if (Input.GetKeyDown(keyToPress))
         {
+            
             if (canBePressed)
             {
                 gameObject.SetActive(false);
+                
                 
                 GameManager.instance.hitNote();
             }
@@ -44,10 +47,8 @@ public class NoteObject : MonoBehaviour
         if(collider.tag == "Activate")
         {
             canBePressed = false;
-            if (!canBePressed)
-            {
-                Destroy(gameObject);
-            }
+            
+           
             GameManager.scoreValue -= 100;
             GameManager.instance.health -= 1;
             GameManager.instance.missedNote();

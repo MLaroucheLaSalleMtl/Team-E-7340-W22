@@ -10,7 +10,7 @@ public class BeatScroll : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Tempo = Tempo / 60f;
+        Tempo = Tempo / 30f;
 
     }
 
@@ -26,8 +26,8 @@ public class BeatScroll : MonoBehaviour
 
        }
        else
-        {
+       {
             transform.position -= new Vector3( Tempo * Time.deltaTime, 0f);
-        }
+       }
     }
 }

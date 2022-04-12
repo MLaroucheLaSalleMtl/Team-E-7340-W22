@@ -5,7 +5,7 @@ using UnityEngine;
 public class DestroyingButton : MonoBehaviour
 {
 
-    public GameObject lives;
+    public GameObject Lives;
     // Start is called before the first frame update
     public void OnCollisionEnter2D(Collision2D destroy)
     {

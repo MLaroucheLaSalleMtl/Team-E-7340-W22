@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public int currentscr = 0;
     public int ScorePerNote = 100;
     public static int scoreValue = 0;
-    public Text Score;
+    public Text score;
 
     public int health;
     public int numOfHearts;
@@ -25,7 +25,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         instance = this;
-        Score.text = "Score:";
+        score.text = "Score:0000";
+        
         
     }
 
@@ -40,16 +41,15 @@ public class GameManager : MonoBehaviour
                 BS.started = true;
             }
         }
+        
        
 
        
     }
     public void HealthHearts()
     {
-        if (health > numOfHearts)
-        {
-            health = numOfHearts;
-        }
+        
+        
 
         for (int i = 0; i < hearts.Length; i++)
         {
@@ -75,12 +75,17 @@ public class GameManager : MonoBehaviour
     public void hitNote()
     {
         Debug.Log("Good Hit");
-        currentscr =+ ScorePerNote;
-        Score.text = scoreValue + "Score:";
+        currentscr += ScorePerNote;
+        score.text = "Score: " + currentscr;
     }
     public void missedNote()
     {
         Debug.Log("Missed Hit");
+        HealthHearts();
+        
+        
+
+        
 
         
     }

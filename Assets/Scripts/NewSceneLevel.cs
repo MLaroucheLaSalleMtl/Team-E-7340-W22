@@ -17,11 +17,10 @@ public class NewSceneLevel : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(BoxCollider2D col)
+    [System.Obsolete]
+    void OnCollisionEnter2D(Collision2D Colider)
     {
-        if (col.CompareTag("Player")) 
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        if (Colider.gameObject.tag == "Player")
+        Application.LoadLevel("Level1");
     }
 }
