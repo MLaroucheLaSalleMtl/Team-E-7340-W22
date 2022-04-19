@@ -492,7 +492,7 @@ MonoBehaviour:
   strtToPlaying: 0
   currentscr: 0
   ScorePerNote: 100
-  score: {fileID: 1753696416}
+  score: {fileID: 0}
   health: 5
   numOfHearts: 5
   hearts:
@@ -22161,25 +22161,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4719096785326892408, guid: 20541325691e4f64db6b2b62799c90a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -34.457363
+      value: -34.44367
       objectReference: {fileID: 0}
     - target: {fileID: 4719096785326892408, guid: 20541325691e4f64db6b2b62799c90a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.48195
+      value: 4.48282
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20541325691e4f64db6b2b62799c90a2, type: 3}
---- !u!114 &1753696416 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4746062531333269560, guid: 7e4c1edceb47e6c43bfec92ab0711043, type: 3}
-  m_PrefabInstance: {fileID: 4544216801696076083}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1818854464
 GameObject:
   m_ObjectHideFlags: 0
