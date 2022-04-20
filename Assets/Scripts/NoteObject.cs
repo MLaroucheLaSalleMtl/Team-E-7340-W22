@@ -38,24 +38,22 @@ public class NoteObject : MonoBehaviour
             canBePressed = true;
             GameManager.scoreValue += 100;
         }
-    }
-    
-       
-    
-    private void OnTriggerExit2D(Collider2D collider)
-    {
-        if(collider.tag == "Activate")
+        if(collider.tag == "DeActivate")
         {
             canBePressed = false;
-            
-           
+            Debug.Log("beep");
+
             GameManager.scoreValue -= 100;
             GameManager.instance.health -= 1;
             GameManager.instance.missedNote();
         }
-      
-        
     }
+    
+       
+    
+    
+
+    
    // private void OnCollisionEnter2D(Collision2D collision)
    // {
       //  if(collision.gameObject.name == "DestroyingButtons")

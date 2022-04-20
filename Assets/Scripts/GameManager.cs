@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
+    public static bool gameOver;
+    public GameObject Boundground;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +42,11 @@ public class GameManager : MonoBehaviour
                 strtToPlaying = true;
                 BS.started = true;
             }
+        }
+        if(health == 0)
+        {
+            gameOver = true;
+            Boundground.SetActive(true);
         }
         
        

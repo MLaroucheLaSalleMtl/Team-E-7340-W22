@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Activate
   - ArrowsKeys
+  - DeActivate
   layers:
   - Default
   - TransparentFX
@@ -69,4 +70,7 @@ TagManager:
     locked: 0
   - name: Main Character
     uniqueID: 1394974295
+    locked: 0
+  - name: GameOver
+    uniqueID: 786030113
     locked: 0
